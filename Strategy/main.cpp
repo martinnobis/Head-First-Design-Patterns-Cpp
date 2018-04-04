@@ -15,7 +15,7 @@ int main() {
     std::shared_ptr<FlyBehaviour> no_fly =
         std::make_shared<FlyNoWay>(FlyNoWay());
     std::shared_ptr<QuackBehaviour> quack =
-        std::make_shared<Quacker>(Quacker());
+        std::shared_ptr<QuackBehaviour>(new Quacker());
     Duck my_mallard = MallardDuck(no_fly, quack);
 
     my_mallard.PerformFly();
@@ -23,7 +23,7 @@ int main() {
 
     // Change run-time behaviour
     std::shared_ptr<FlyBehaviour> fly =
-        std::make_shared<FlyWithWings>(FlyWithWings());
+        std::shared_ptr<FlyBehaviour>(new FlyWithWings());
     my_mallard.SetFlyBehaviour(fly);
     my_mallard.PerformFly();
 

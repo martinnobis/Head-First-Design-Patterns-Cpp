@@ -13,6 +13,6 @@ SRCS = main.cpp \
 	   $(ENCAPSULATED_QUACK_BEHAVIOUR)
 
 all:
-	g++ $(SRCS) -o ducks -std=c++11
-	./ducks
+	g++ $(SRCS) -o ducks.o -std=c++11
+	./ducks.o
 	
