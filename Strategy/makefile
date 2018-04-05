@@ -1,13 +1,13 @@
-DUCK = duck.cpp
+DUCK = duck.cc
 
-ENCAPSULATED_FLY_BEHAVIOUR =	fly_with_wings.cpp \
-						 	 	fly_no_way.cpp
+ENCAPSULATED_FLY_BEHAVIOUR =	fly_with_wings.cc \
+						 	 	fly_no_way.cc
 
-ENCAPSULATED_QUACK_BEHAVIOUR =	quacker.cpp \
-							   	squeak.cpp \
-							   	mute_quack.cpp
+ENCAPSULATED_QUACK_BEHAVIOUR =	quacker.cc \
+							   	squeak.cc \
+							   	mute_quack.cc
 
-SRCS =	main.cpp \
+SRCS =	main.cc \
 	   	$(DUCK) \
 	   	$(ENCAPSULATED_FLY_BEHAVIOUR) \
 	   	$(ENCAPSULATED_QUACK_BEHAVIOUR)
