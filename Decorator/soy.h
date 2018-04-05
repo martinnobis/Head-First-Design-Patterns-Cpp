@@ -6,10 +6,10 @@
 #include "condiment_decorator.h"
 #include "beverage.h"
 
-class Mocha : public CondimentDecorator {
+class Soy : public CondimentDecorator {
 
     public:
-    Mocha(Beverage&);
+    Soy(Beverage&);
 
     std::string get_description(void) const;
     double cost(void) const;

@@ -3,9 +3,16 @@
 HouseBlend::HouseBlend() : Beverage("House Blend") { }
 
 std::string HouseBlend::get_description(void) const {
-    return description_;
+    return get_name(size_) + ", " + description_;
 }
 
 double HouseBlend::cost(void) const {
-    return 1.99;
+    switch(size_) {
+        case Tall:
+        return 1.99;
+        case Grande:
+        return 2.49;
+        case Venti:
+        return 2.99;
+    }
 }
