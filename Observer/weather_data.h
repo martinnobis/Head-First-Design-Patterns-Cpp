@@ -18,9 +18,9 @@ class WeatherData : public Subject {
 
     private:
     std::vector<std::shared_ptr<Observer>> observers_;
-    float temperature;
-    float humidity;
-    float pressure;;
+    float temperature_;
+    float humidity_;
+    float pressure_;;
 };
 
 #endif

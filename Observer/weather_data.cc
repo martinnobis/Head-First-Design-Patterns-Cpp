@@ -14,11 +14,16 @@ void WeatherData::RemoveObserver(std::shared_ptr<Observer> o) {
 }
 void WeatherData::NotifyObservers(void) const {
     for (auto it = observers_.begin(); it != observers_.end(); ++it) {
-        (*it)->Update(temperature, humidity, pressure);
+        (*it)->Update(temperature_, humidity_, pressure_);
     }
 }
 
 void WeatherData::MeasurementsChanged(void) const {
     NotifyObservers();
 }
-    void SetMeasurements(float, float, float);
+
+void WeatherData::SetMeasurements(float temperature, float humidity, float pressure) {
+    temperature_ = temperature;
+    humidity_ = humidity;
+    pressure_ = pressure;
+}
