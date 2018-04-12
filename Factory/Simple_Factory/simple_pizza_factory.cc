@@ -2,23 +2,22 @@
 
 #include "simple_pizza_factory.h"
 
-#include "cheese_pizza.h"
-#include "veggie_pizza.h"
-#include "clam_pizza.h"
-#include "pepperoni_pizza.h"
+#include "../pizze/cheese_pizza.h"
+#include "../pizze/veggie_pizza.h"
+#include "../pizze/clam_pizza.h"
+#include "../pizze/pepperoni_pizza.h"
 
 Pizza SimplePizzaFactory::CreatePizza(std::string type) const {
     Pizza pizza;
 
-    std::cout << "Creating a " + type + " pizza!" << std::endl;
     if (type == "cheese") {
-        pizza = CheesePizza();
+        pizza = CheesePizza("Cheese", "Thick Crust", "No");
     } else if (type == "veggie") {
-        pizza = VeggiePizza();
+        pizza = VeggiePizza("Veggie", "Thin Crust", "Tomato");
     } else if (type == "clam") {
-        pizza = ClamPizza();
+        pizza = ClamPizza("Clam", "Thick Crust", "Tomato");
     } else if (type == "pepperoni") {
-        pizza = PepperoniPizza();
+        pizza = PepperoniPizza("Pepperoni", "Thin Crust", "Spicy Tomato");
     }
 
     return pizza;

@@ -4,7 +4,7 @@ PizzaStore::PizzaStore(SimplePizzaFactory& factory) : factory_(factory) {
 }
 
 Pizza PizzaStore::OrderPizza(std::string type) const {
-    Pizza pizza;
+    Pizza pizza("Hawaiian", "Thin Crust", "Tomato");
 
     pizza = factory_.CreatePizza(type);
 

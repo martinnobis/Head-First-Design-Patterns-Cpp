@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "pizza.h"
+#include "../pizze/pizza.h"
 #include "simple_pizza_factory.h"
 
 class PizzaStore {

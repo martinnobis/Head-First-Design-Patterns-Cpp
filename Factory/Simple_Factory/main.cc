@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "simple_pizza_factory.h"
-#include "pizza.h"
+#include "../pizze/pizza.h"
 #include "pizza_store.h"
 
 int main(void) {
