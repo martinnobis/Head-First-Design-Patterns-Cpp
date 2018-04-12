@@ -1,6 +1,5 @@
 #include "ny_style_clam_pizza.h"
 
-NYStyleClamPizza::NYStyleClamPizza(std::string name, std::string dough, std::string sauce) :
-        Pizza(name, dough, sauce) {
+NYStyleClamPizza::NYStyleClamPizza() : Pizza("NY style clam", "Thick crust", "Olive oil") {
     toppings_.push_back("Big Juicy Clams");
-        }
+}

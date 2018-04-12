@@ -5,7 +5,7 @@
 
 class NYStyleClamPizza: public Pizza {
     public:
-    NYStyleClamPizza(std::string, std::string, std::string);
+    NYStyleClamPizza();
 };
 
 #endif  // _NY_STYLE_CLAM_PIZZA_H_

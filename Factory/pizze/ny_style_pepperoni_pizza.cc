@@ -1,6 +1,5 @@
 #include "ny_style_pepperoni_pizza.h"
 
-NYStylePepperoniPizza::NYStylePepperoniPizza(std::string name, std::string dough, std::string sauce) :
-        Pizza(name, dough, sauce) {
+NYStylePepperoniPizza::NYStylePepperoniPizza() : Pizza("NY style pepperoni", "Thin crust", "Spicy tomato") {
     toppings_.push_back("Big Juicy Pepperonis");
-        }
+}

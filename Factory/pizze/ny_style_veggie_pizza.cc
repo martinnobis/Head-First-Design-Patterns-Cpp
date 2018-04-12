@@ -1,8 +1,7 @@
 #include "ny_style_veggie_pizza.h"
 
-NYStyleVeggiePizza::NYStyleVeggiePizza(std::string name, std::string dough, std::string sauce) :
-        Pizza(name, dough, sauce) {
+NYStyleVeggiePizza::NYStyleVeggiePizza() : Pizza("NY style veggie", "Thin dough", "Tomato") {
     toppings_.push_back("Mushrooms");
     toppings_.push_back("Capsicum");
     toppings_.push_back("Rucola");
-        }
+}
