@@ -9,7 +9,7 @@
 
 class CurrentConditionsDisplay : public Observer, DisplayElement {
     public:
-    CurrentConditionsDisplay(std::shared_ptr<Subject>);
+    CurrentConditionsDisplay(Subject& sub) : weather_data_(sub) {}
     // From the Display interface
     void Display(void);
     // From the Observer interface
@@ -18,7 +18,7 @@ class CurrentConditionsDisplay : public Observer, DisplayElement {
     private:
     float temperature_;
     float humidity_;
-    std::shared_ptr<Subject> weather_data_;
+    Subject& weather_data_;
 };
 
 #endif  // _CURRENT_CONDITIONS_DISPLAY_H_
