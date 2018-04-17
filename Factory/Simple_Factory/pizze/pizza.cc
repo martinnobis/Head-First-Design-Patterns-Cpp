@@ -25,3 +25,11 @@ void Pizza::Cut(void) const {
 void Pizza::Box(void) const {
     std::cout << "Boxing the Pizza!" << std::endl;
 }
+
+std::string Pizza::get_name(void) const {
+    return name_;
+}
+
+void Pizza::set_name(std::string name) {
+    name_ = name;
+}

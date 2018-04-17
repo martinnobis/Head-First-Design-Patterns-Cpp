@@ -1,6 +1,6 @@
 SRCS =	main.cc \
 		pizza_store.cc \
-		../pizze/pizza.cc \
+		pizze/pizza.cc \
 		simple_pizza_factory.cc
 
 all:

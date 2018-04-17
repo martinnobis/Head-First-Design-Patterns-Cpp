@@ -13,6 +13,8 @@ class Pizza {
     void Bake(void) const;
     void Cut(void) const;
     void Box(void) const;
+    std::string get_name(void) const;
+    void set_name(std::string);
 
     protected:
     std::string name_;

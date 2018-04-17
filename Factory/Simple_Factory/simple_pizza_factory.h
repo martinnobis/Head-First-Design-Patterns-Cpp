@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "../pizze/pizza.h"
+#include "pizze/pizza.h"
 
 class SimplePizzaFactory {
     public:
