@@ -6,17 +6,17 @@
 #include "ingredients/fresh_clams.h"
 
 std::shared_ptr<Dough> NYPizzaIngredientFactory::CreateDough(void) {
-    return std::shared_ptr<ThinCrustDough>(new ThinCrustDough);
+    return std::make_shared<ThinCrustDough>();
 }
 
 std::shared_ptr<Sauce> NYPizzaIngredientFactory::CreateSauce(void) {
-    return std::shared_ptr<MarinaraSauce>(new MarinaraSauce);
+    return std::make_shared<MarinaraSauce>();
 }
 
 std::shared_ptr<Cheese> NYPizzaIngredientFactory::CreateCheese(void) {
-    return std::shared_ptr<ReggianoCheese>(new ReggianoCheese);
+    return std::make_shared<ReggianoCheese>();
 }
 
 std::shared_ptr<Clams> NYPizzaIngredientFactory::CreateClams(void) {
-    return std::shared_ptr<FreshClams>(new FreshClams);
+    return std::make_shared<FreshClams>();
 }

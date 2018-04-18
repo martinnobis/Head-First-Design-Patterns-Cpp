@@ -5,7 +5,7 @@
 #include "ny_pizza_ingredient_factory.h"
 
 std::shared_ptr<Pizza> NYStylePizzaStore::CreatePizza(std::string type) const {
-    std::shared_ptr<PizzaIngredientFactory> factory = std::shared_ptr<NYPizzaIngredientFactory>(new NYPizzaIngredientFactory);
+    std::shared_ptr<PizzaIngredientFactory> factory = std::make_shared<NYPizzaIngredientFactory>();
     std::shared_ptr<Pizza> pizza;
 
     if (type == "cheese") {
