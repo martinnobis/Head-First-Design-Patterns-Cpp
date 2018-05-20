@@ -31,12 +31,12 @@ void RemoteControl::OffButtonWasPushed(int slot) const
     off_commands_.at(slot)->Execute();
 }
 
-std::ostream& operator<<(std::ostream& stream, const RemoteControl& remote)
-{
-    stream << "------ Remote Control ------";
+std::ostream &operator<<(std::ostream &stream, const RemoteControl &remote) {
+    stream << "------- Remote Control -------";
     for (int i = 0; i < 7; i++)
     {
-        stream << std::endl << remote.on_commands_.at(i)->get_name_() << "      \t" << remote.off_commands_.at(i)->get_name_();
+        stream << std::endl << "[slot " << i << "] " << remote.on_commands_.at(i)->get_name_() << " \t" <<
+        remote.off_commands_.at(i)->get_name_();
     }
     return stream;
 }

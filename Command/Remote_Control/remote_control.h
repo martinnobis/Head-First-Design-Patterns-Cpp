@@ -15,10 +15,12 @@ class RemoteControl
     void OffButtonWasPushed(int slot) const;
 
   private:
+    friend std::ostream& operator<<(std::ostream&, const RemoteControl&);
+
+  private:
     int num_buttons_;
     std::vector<std::shared_ptr<Command>> on_commands_;
     std::vector<std::shared_ptr<Command>> off_commands_;
-    friend std::ostream& operator<<(std::ostream&, const RemoteControl&);
 };
 
 #endif // _REMOTE_CONTROL_H_

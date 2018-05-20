@@ -1,10 +1,11 @@
 #include <iostream>
 #include <memory>
 
-#include "light_on_command.h"
-#include "light_off_command.h"
-#include "light.h"
 #include "remote_control.h"
+
+#include "Light/light_on_command.h"
+#include "Light/light_off_command.h"
+#include "Light/light.h"
 
 int main(void) {
     Light light;

@@ -1,7 +1,7 @@
 #ifndef _LIGHT_OFF_COMMAND_H_
 #define _LIGHT_OFF_COMMAND_H_
 
-#include "command.h"
+#include "../command.h"
 #include "light.h"
 
 class LightOffCommand : public Command
