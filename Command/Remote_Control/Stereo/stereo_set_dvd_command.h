@@ -8,6 +8,7 @@ class StereoSetDvdCommand : public Command {
     public:
     StereoSetDvdCommand(Stereo stereo) : Command("StereoSetDvd"), stereo_(stereo) {}
     void Execute(void) const;
+    void Undo(void) const;
 
     private:
     Stereo stereo_;

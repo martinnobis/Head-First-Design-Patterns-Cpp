@@ -8,6 +8,7 @@ class LightOnCommand : public Command {
     public:
     LightOnCommand(Light light) : Command("LightOn"), light_(light) {}
     void Execute(void) const;
+    void Undo(void) const;
 
     private:
     Light light_;

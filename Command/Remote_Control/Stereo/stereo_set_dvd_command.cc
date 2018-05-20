@@ -3,3 +3,7 @@
 void StereoSetDvdCommand::Execute(void) const {
     stereo_.SetDvd();
 }
+
+void StereoSetDvdCommand::Undo(void) const {
+    stereo_.UnSetDvd();
+}

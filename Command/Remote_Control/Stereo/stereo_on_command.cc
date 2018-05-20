@@ -3,3 +3,7 @@
 void StereoOnCommand::Execute(void) const {
     stereo_.On();
 }
+
+void StereoOnCommand::Undo(void) const {
+    stereo_.Off();
+}

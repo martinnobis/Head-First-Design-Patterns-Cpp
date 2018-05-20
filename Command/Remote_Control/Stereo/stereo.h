@@ -9,6 +9,7 @@ class Stereo {
     void On(void) const;
     void Off(void) const;
     void SetDvd(void) const;
+    void UnSetDvd(void) const;
     // And other identical methods...
 
     private:

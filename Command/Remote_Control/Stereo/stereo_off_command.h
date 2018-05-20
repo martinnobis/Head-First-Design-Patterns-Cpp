@@ -9,6 +9,7 @@ class StereoOffCommand : public Command
   public:
     StereoOffCommand(Stereo stereo) : Command("StereoOff"), stereo_(stereo) {}
     void Execute(void) const;
+    void Undo(void) const;
 
   private:
     Stereo stereo_;

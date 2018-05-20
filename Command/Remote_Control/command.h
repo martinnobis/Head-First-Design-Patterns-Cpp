@@ -8,6 +8,7 @@ class Command {
     Command(std::string name) : name_(name) { }
     virtual ~Command() { }
     virtual void Execute(void) const = 0;
+    virtual void Undo(void) const = 0;
     std::string get_name_(void) const;
 
     private:
