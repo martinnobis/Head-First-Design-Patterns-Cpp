@@ -10,7 +10,7 @@ class RemoteControl
 {
   public:
     RemoteControl();
-    void SetCommand(std::shared_ptr<Command> on_command, std::shared_ptr<Command> off_command, int slot);
+    void SetCommand(int slot, std::shared_ptr<Command> on_command, std::shared_ptr<Command> off_command);
     void OnButtonWasPushed(int slot) const;
     void OffButtonWasPushed(int slot) const;
 

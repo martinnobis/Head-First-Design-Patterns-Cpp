@@ -15,7 +15,7 @@ RemoteControl::RemoteControl()
     }
 }
 
-void RemoteControl::SetCommand(std::shared_ptr<Command> on_command, std::shared_ptr<Command> off_command, int slot)
+void RemoteControl::SetCommand(int slot, std::shared_ptr<Command> on_command, std::shared_ptr<Command> off_command)
 {
     on_commands_.at(slot) = on_command;
     off_commands_.at(slot) = off_command;

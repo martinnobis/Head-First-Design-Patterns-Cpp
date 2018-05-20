@@ -7,14 +7,34 @@
 #include "Light/light_off_command.h"
 #include "Light/light.h"
 
-int main(void) {
-    Light light;
-    auto light_on = std::make_shared<LightOnCommand>(light);
-    auto light_off = std::make_shared<LightOffCommand>(light);
+#include "Stereo/stereo_on_command.h"
+#include "Stereo/stereo_off_command.h"
+#include "Stereo/stereo.h"
 
-    RemoteControl remote;
-    std::cout << remote << std::endl;
-    remote.SetCommand(light_on, light_off, 1);
-    std::cout << remote << std::endl;
-    remote.OnButtonWasPushed(1);
+int main(void) {
+    RemoteControl remote_control;
+
+    // Things to command
+    Light living_room_light("Living Room");
+    Stereo living_room_stereo("Living Room");
+
+    // Commands
+    auto living_room_light_on = std::make_shared<LightOnCommand>(living_room_light);
+    auto living_room_light_off = std::make_shared<LightOffCommand>(living_room_light);
+
+    auto living_room_stereo_on = std::make_shared<StereoOnCommand>(living_room_stereo);
+    auto living_room_stereo_off = std::make_shared<StereoOffCommand>(living_room_stereo);
+
+    // Assign commands to buttons on the remote.
+    remote_control.SetCommand(0, living_room_light_on, living_room_light_off);
+    remote_control.SetCommand(1, living_room_stereo_on, living_room_stereo_off);
+
+    std::cout << remote_control << std::endl << std::endl;
+
+    // Push some buttons.
+    remote_control.OnButtonWasPushed(0);
+    remote_control.OffButtonWasPushed(0);
+
+    remote_control.OnButtonWasPushed(1);
+    remote_control.OffButtonWasPushed(1);
 }
