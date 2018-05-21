@@ -3,10 +3,11 @@
 
 #include "duck.h"
 
-class DecoyDuck : public Duck {
-    public:
+class DecoyDuck : public Duck
+{
+  public:
     DecoyDuck(std::shared_ptr<FlyBehaviour> fly,
-        std::shared_ptr<QuackBehaviour> quack) : Duck(fly, quack) { }
+              std::shared_ptr<QuackBehaviour> quack) : Duck(fly, quack) {}
 };
 
-#endif  // _DECOY_DUCK_H_
+#endif // _DECOY_DUCK_H_

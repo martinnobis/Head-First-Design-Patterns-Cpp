@@ -6,13 +6,13 @@
 
 class LightOffCommand : public Command
 {
-  public:
-    LightOffCommand(Light light) : Command("LightOff"), light_(light) {}
-    void Execute(void) const;
-    void Undo(void) const;
+public:
+  LightOffCommand(Light light) : Command("LightOff"), light_(light) {}
+  void Execute(void) const;
+  void Undo(void) const;
 
-  private:
-    Light light_;
+private:
+  Light light_;
 };
 
 #endif // _LIGHT_OFF_COMMAND_H_

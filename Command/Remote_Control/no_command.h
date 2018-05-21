@@ -5,10 +5,10 @@
 
 class NoCommand : public Command
 {
-  public:
-    NoCommand() : Command("NoCommand") { }
-    void Execute(void) const;
-    void Undo(void) const;
+public:
+  NoCommand() : Command("NoCommand") {}
+  void Execute(void) const;
+  void Undo(void) const;
 };
 
 #endif // _NO_COMMAND_H_

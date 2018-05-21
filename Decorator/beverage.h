@@ -3,21 +3,27 @@
 
 #include <string>
 
-enum Size { Tall, Grande, Venti };
+enum Size
+{
+    Tall,
+    Grande,
+    Venti
+};
 
 const std::string get_name(Size);
 
-class Beverage {
-    public:
+class Beverage
+{
+  public:
     Beverage(std::string);
     virtual double cost(void) const = 0;
     virtual std::string get_description(void) const;
     void set_size(Size);
     Size get_size(void) const;
 
-    protected:
+  protected:
     std::string description_;
     Size size_;
 };
 
-#endif
+#endif // _BEVERAGE_H_

@@ -3,8 +3,9 @@
 
 #include "pizza_ingredient_factory.h"
 
-class NYPizzaIngredientFactory : public PizzaIngredientFactory {
-    public:
+class NYPizzaIngredientFactory : public PizzaIngredientFactory
+{
+  public:
     // From PizzaIngredientFactory interface
     std::shared_ptr<Dough> CreateDough(void);
     std::shared_ptr<Sauce> CreateSauce(void);
@@ -12,4 +13,4 @@ class NYPizzaIngredientFactory : public PizzaIngredientFactory {
     std::shared_ptr<Clams> CreateClams(void);
 };
 
-#endif  // _NY_PIZZA_INGREDIENT_FACTORY_H_
+#endif // _NY_PIZZA_INGREDIENT_FACTORY_H_

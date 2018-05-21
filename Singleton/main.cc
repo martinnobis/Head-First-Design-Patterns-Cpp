@@ -2,8 +2,9 @@
 
 #include "chocolate_boiler.h"
 
-int main(void) {
-    ChocolateBoiler& instance = ChocolateBoiler::GetInstance();
+int main(void)
+{
+    ChocolateBoiler &instance = ChocolateBoiler::GetInstance();
     instance.Fill();
     instance.Boil();
     instance.Drain();

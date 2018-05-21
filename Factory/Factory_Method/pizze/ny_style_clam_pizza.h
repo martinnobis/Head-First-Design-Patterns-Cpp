@@ -3,9 +3,10 @@
 
 #include "pizza.h"
 
-class NYStyleClamPizza: public Pizza {
-    public:
+class NYStyleClamPizza : public Pizza
+{
+  public:
     NYStyleClamPizza();
 };
 
-#endif  // _NY_STYLE_CLAM_PIZZA_H_
+#endif // _NY_STYLE_CLAM_PIZZA_H_

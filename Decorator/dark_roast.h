@@ -3,11 +3,12 @@
 
 #include "beverage.h"
 
-class DarkRoast: public Beverage {
-    public:
+class DarkRoast : public Beverage
+{
+  public:
     DarkRoast();
     std::string get_description(void) const;
     double cost(void) const;
 };
 
-#endif
+#endif // _DARK_ROAST_H_

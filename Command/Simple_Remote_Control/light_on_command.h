@@ -4,13 +4,14 @@
 #include "command.h"
 #include "light.h"
 
-class LightOnCommand : public Command {
-    public:
-    LightOnCommand(Light light) : light_(light) { }
+class LightOnCommand : public Command
+{
+  public:
+    LightOnCommand(Light light) : light_(light) {}
     void Execute(void) const;
 
-    private:
+  private:
     Light light_;
 };
 
-#endif  // _LIGHT_ON_COMMAND_H_
+#endif // _LIGHT_ON_COMMAND_H_

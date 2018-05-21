@@ -5,9 +5,10 @@
 
 #include "observer.h"
 
-class Subject {
-    public:
-    virtual ~Subject() { }
+class Subject
+{
+  public:
+    virtual ~Subject() {}
     virtual void RegisterObserver(std::shared_ptr<Observer>) = 0;
     virtual void RemoveObserver(std::shared_ptr<Observer>) = 0;
     virtual void NotifyObservers(void) const = 0;

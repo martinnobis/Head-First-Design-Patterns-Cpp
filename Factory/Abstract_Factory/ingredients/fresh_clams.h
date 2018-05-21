@@ -3,8 +3,8 @@
 
 #include "clams.h"
 
-class FreshClams : public Clams {
-
+class FreshClams : public Clams
+{
 };
 
-#endif  // _FRESH_CLAMS_H_
+#endif // _FRESH_CLAMS_H_

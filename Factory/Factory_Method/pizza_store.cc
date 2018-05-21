@@ -1,6 +1,7 @@
 #include "pizza_store.h"
 
-Pizza PizzaStore::OrderPizza(std::string type) const {
+Pizza PizzaStore::OrderPizza(std::string type) const
+{
     Pizza pizza;
 
     pizza = CreatePizza(type);

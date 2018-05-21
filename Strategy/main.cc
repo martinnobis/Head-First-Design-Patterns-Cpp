@@ -11,7 +11,8 @@
 #include "fly_with_wings.h"
 #include "quacker.h"
 
-int main() {
+int main()
+{
     std::shared_ptr<FlyBehaviour> no_fly =
         std::make_shared<FlyNoWay>(FlyNoWay());
     std::shared_ptr<QuackBehaviour> quack =
@@ -29,7 +30,6 @@ int main() {
 
     /* --- */
     Duck decoy_duck = DecoyDuck(no_fly, quack);
-
 
     return 0;
 }

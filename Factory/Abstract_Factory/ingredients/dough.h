@@ -1,8 +1,8 @@
 #ifndef _DOUGH_H_
 #define _DOUGH_H_
 
-class Dough {
-
+class Dough
+{
 };
 
-#endif  // _DOUGH_H_
+#endif // _DOUGH_H_

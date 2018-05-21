@@ -3,9 +3,10 @@
 
 #include "quack_behaviour.h"
 
-class Squeak : public QuackBehaviour {
- public:
+class Squeak : public QuackBehaviour
+{
+  public:
     void Quack(void) const;
 };
 
-#endif  // _SQUEAK_H_
+#endif // _SQUEAK_H_

@@ -3,14 +3,15 @@
 
 #include <string>
 
-class Light {
-    public:
-    Light(std::string name) : name_(name) { }
+class Light
+{
+  public:
+    Light(std::string name) : name_(name) {}
     void On(void) const;
     void Off(void) const;
 
-    private:
+  private:
     std::string name_;
 };
 
-#endif  // _LIGHT_H_
+#endif // _LIGHT_H_

@@ -1,8 +1,8 @@
 #ifndef _SAUCE_H_
 #define _SAUCE_H_
 
-class Sauce {
-
+class Sauce
+{
 };
 
-#endif  // _SAUCE_H_
+#endif // _SAUCE_H_

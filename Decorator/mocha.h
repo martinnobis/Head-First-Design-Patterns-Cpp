@@ -6,16 +6,17 @@
 #include "condiment_decorator.h"
 #include "beverage.h"
 
-class Mocha : public CondimentDecorator {
+class Mocha : public CondimentDecorator
+{
 
-    public:
-    Mocha(Beverage&);
+  public:
+    Mocha(Beverage &);
 
     std::string get_description(void) const;
     double cost(void) const;
 
-    private:
-    Beverage& beverage_;
+  private:
+    Beverage &beverage_;
 };
 
-#endif
+#endif // _MOCHA_H_

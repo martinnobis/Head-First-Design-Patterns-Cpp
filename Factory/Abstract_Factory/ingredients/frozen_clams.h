@@ -3,8 +3,8 @@
 
 #include "clams.h"
 
-class FrozenClams : public Clams {
-
+class FrozenClams : public Clams
+{
 };
 
-#endif  // _FROZEN__CLAMS_H_
+#endif // _FROZEN__CLAMS_H_

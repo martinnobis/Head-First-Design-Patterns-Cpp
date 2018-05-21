@@ -3,17 +3,18 @@
 
 #include <string>
 
-class Stereo {
-    public:
-    Stereo(std::string name) : name_(name) { }
+class Stereo
+{
+  public:
+    Stereo(std::string name) : name_(name) {}
     void On(void) const;
     void Off(void) const;
     void SetDvd(void) const;
     void UnSetDvd(void) const;
     // And other identical methods...
 
-    private:
+  private:
     std::string name_;
 };
 
-#endif  // _STEREO_H_
+#endif // _STEREO_H_

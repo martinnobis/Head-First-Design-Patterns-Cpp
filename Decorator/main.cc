@@ -12,17 +12,18 @@
 #include "soy.h"
 #include "whip.h"
 
-int main(void) {
+int main(void)
+{
     Espresso es;
-    Beverage& beverage = es;
+    Beverage &beverage = es;
     std::cout << "$" + std::to_string(beverage.cost()) << std::endl;
     std::cout << beverage.get_description() << std::endl;
 
-    // Cannot reassign references in C++
+    // Cannot reassign references in C++.
     DarkRoast dr;
-    Beverage& beverage2 = dr;
+    Beverage &beverage2 = dr;
     Mocha m = Mocha(beverage2);
-    Beverage& beverage3 = m;
+    Beverage &beverage3 = m;
     std::cout << "$" + std::to_string(beverage3.cost()) << std::endl;
     std::cout << beverage3.get_description() << std::endl;
 }

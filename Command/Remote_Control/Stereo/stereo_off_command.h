@@ -6,13 +6,13 @@
 
 class StereoOffCommand : public Command
 {
-  public:
-    StereoOffCommand(Stereo stereo) : Command("StereoOff"), stereo_(stereo) {}
-    void Execute(void) const;
-    void Undo(void) const;
+public:
+  StereoOffCommand(Stereo stereo) : Command("StereoOff"), stereo_(stereo) {}
+  void Execute(void) const;
+  void Undo(void) const;
 
-  private:
-    Stereo stereo_;
+private:
+  Stereo stereo_;
 };
 
 #endif // _STEREO_OFF_COMMAND_H_

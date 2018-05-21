@@ -11,7 +11,8 @@
 #include "Stereo/stereo_off_command.h"
 #include "Stereo/stereo.h"
 
-int main(void) {
+int main(void)
+{
     RemoteControl remote_control;
 
     // Things to command
@@ -29,7 +30,8 @@ int main(void) {
     remote_control.SetCommand(0, living_room_light_on, living_room_light_off);
     remote_control.SetCommand(1, living_room_stereo_on, living_room_stereo_off);
 
-    std::cout << remote_control << std::endl << std::endl;
+    std::cout << remote_control << std::endl
+              << std::endl;
 
     // Push some buttons.
     remote_control.OnButtonWasPushed(0);

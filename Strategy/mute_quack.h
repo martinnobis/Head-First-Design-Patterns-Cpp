@@ -3,9 +3,10 @@
 
 #include "quack_behaviour.h"
 
-class MuteQuack : public QuackBehaviour {
-    public:
-        void Quack(void) const;
+class MuteQuack : public QuackBehaviour
+{
+  public:
+    void Quack(void) const;
 };
 
-#endif  // _MUTE_DUCK_H_
+#endif // _MUTE_DUCK_H_

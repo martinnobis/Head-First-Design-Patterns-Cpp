@@ -3,8 +3,8 @@
 
 #include "dough.h"
 
-class ThickCrustDough : public Dough {
-
+class ThickCrustDough : public Dough
+{
 };
 
-#endif  // _THICK_CRUST_DOUGH_H_
+#endif // _THICK_CRUST_DOUGH_H_

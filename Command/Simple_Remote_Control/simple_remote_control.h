@@ -5,14 +5,16 @@
 
 #include "command.h"
 
-class SimpleRemoteControl {
-    public:
+class SimpleRemoteControl
+{
+  public:
     void SetCommand(std::shared_ptr<Command>);
     void ButtonWasPressed(void) const;
-    private:
+
+  private:
     // A pointer instead of a reference as you have to initialise references
     // in the constructor, here we want to use the SetCommand() method instead.
     std::shared_ptr<Command> slot_;
 };
 
-#endif  // _SIMPLE_REMOTE_CONTROL_H_
+#endif // _SIMPLE_REMOTE_CONTROL_H_

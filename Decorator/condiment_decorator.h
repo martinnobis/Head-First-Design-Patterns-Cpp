@@ -3,10 +3,11 @@
 
 #include "beverage.h"
 
-class CondimentDecorator: public Beverage {
-    public:
-    CondimentDecorator() : Beverage("Unknown Beverage") { }
+class CondimentDecorator : public Beverage
+{
+  public:
+    CondimentDecorator() : Beverage("Unknown Beverage") {}
     std::string get_description(void) const;
 };
 
-#endif
+#endif // _CONDIMENT_DECORATOR_H_

@@ -1,8 +1,8 @@
 #ifndef _VEGGIES_H_
 #define _VEGGIES_H_
 
-class Veggies {
-
+class Veggies
+{
 };
 
-#endif  // _VEGGIES_H_
+#endif // _VEGGIES_H_

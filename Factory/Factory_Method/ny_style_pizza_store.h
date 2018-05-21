@@ -3,9 +3,10 @@
 
 #include "pizza_store.h"
 
-class NYStylePizzaStore: public PizzaStore {
-    public:
+class NYStylePizzaStore : public PizzaStore
+{
+  public:
     Pizza CreatePizza(std::string type) const;
 };
 
-#endif  // _NY_STYLE_PIZZA_STORE_H_
+#endif // _NY_STYLE_PIZZA_STORE_H_

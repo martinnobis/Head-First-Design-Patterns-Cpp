@@ -10,8 +10,9 @@
 #include "../ingredients/clams.h"
 #include "../ingredients/cheese.h"
 
-class Pizza {
-    public:
+class Pizza
+{
+  public:
     virtual void Prepare(void) = 0;
     void Bake(void) const;
     void Cut(void) const;
@@ -19,7 +20,7 @@ class Pizza {
     std::string get_name(void) const;
     void set_name(std::string);
 
-    protected:
+  protected:
     std::string name_;
     std::shared_ptr<Dough> dough_;
     std::shared_ptr<Sauce> sauce_;
@@ -28,4 +29,4 @@ class Pizza {
     std::shared_ptr<Clams> clam_;
 };
 
-#endif  // _PIZZA_H_
+#endif // _PIZZA_H_

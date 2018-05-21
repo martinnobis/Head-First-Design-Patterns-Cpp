@@ -4,14 +4,15 @@
 #include "../command.h"
 #include "stereo.h"
 
-class StereoOnCommand : public Command {
-    public:
+class StereoOnCommand : public Command
+{
+  public:
     StereoOnCommand(Stereo stereo) : Command("StereoOn"), stereo_(stereo) {}
     void Execute(void) const;
     void Undo(void) const;
 
-    private:
+  private:
     Stereo stereo_;
 };
 
-#endif  // _STEREO_ON_COMMAND_H_
+#endif // _STEREO_ON_COMMAND_H_

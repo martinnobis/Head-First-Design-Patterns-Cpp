@@ -3,8 +3,8 @@
 
 #include "cheese.h"
 
-class ReggianoCheese : public Cheese {
-
+class ReggianoCheese : public Cheese
+{
 };
 
-#endif  // _REGGIANO_CHEESE_H_
+#endif // _REGGIANO_CHEESE_H_
