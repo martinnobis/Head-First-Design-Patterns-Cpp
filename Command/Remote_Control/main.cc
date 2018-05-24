@@ -14,7 +14,6 @@
 int main(void)
 {
     RemoteControl remote_control;
-
     // Things to command
     Light living_room_light("Living Room");
     Stereo living_room_stereo("Living Room");

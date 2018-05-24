@@ -12,6 +12,7 @@ SRCS =	main_with_undo.cc \
 		remote_control_with_undo.cc \
 		command.cc \
 		no_command.cc \
+		macro_command.cc \
 		$(LIGHT) \
 		$(STEREO)
 
