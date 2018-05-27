@@ -4,7 +4,7 @@
 #include <memory>
 #include <vector>
 
-#include "command.h"
+#include "../command.h"
 
 class RemoteControlWithUndo
 {

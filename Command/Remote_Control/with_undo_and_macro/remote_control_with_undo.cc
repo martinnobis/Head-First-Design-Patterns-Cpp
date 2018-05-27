@@ -1,9 +1,9 @@
 #include <iostream>
 
 #include "remote_control_with_undo.h"
-#include "no_command.h"
+#include "../no_command.h"
 
-#include "command.h"
+#include "../command.h"
 
 RemoteControlWithUndo::RemoteControlWithUndo()
 {
@@ -39,13 +39,15 @@ void RemoteControlWithUndo::UndoButtonWasPushed(void)
     undo_command_->Undo();
 }
 
-std::ostream &operator<<(std::ostream &stream, const RemoteControlWithUndo &remote) {
+std::ostream &operator<<(std::ostream &stream, const RemoteControlWithUndo &remote)
+{
     stream << "------- Remote Control -------";
     for (int i = 0; i < 7; i++)
     {
-        stream << std::endl << "[slot " << i << "] " << remote.on_commands_.at(i)->get_name_() << " \t" <<
-        remote.off_commands_.at(i)->get_name_();
+        stream << std::endl
+               << "[slot " << i << "] " << remote.on_commands_.at(i)->get_name_() << " \t" << remote.off_commands_.at(i)->get_name_();
     }
-    stream << std::endl << "[undo] " << remote.undo_command_->get_name_();
+    stream << std::endl
+           << "[undo] " << remote.undo_command_->get_name_();
     return stream;
 }

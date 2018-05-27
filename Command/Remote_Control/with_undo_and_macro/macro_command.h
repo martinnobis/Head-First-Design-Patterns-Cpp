@@ -4,7 +4,7 @@
 #include <vector>
 #include <memory>
 
-#include "command.h"
+#include "../command.h"
 
 class MacroCommand : public Command
 {
